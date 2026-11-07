@@ -1,60 +1,105 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Web Design Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Kappa two | Web Design Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      color: #111c26;
+      background: #edf0f3;
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    header { background: #111c26; color: #fff; padding: 56px 0 48px; }
+    header h1 { margin: 0 0 8px; font-size: clamp(36px, 8vw, 64px); line-height: 1.05; }
+    header p { margin: 0; font-size: 18px; color: #c9d1d9; }
+    section { padding: 44px 0; border-bottom: 1px solid #c9d1d9; }
+    h2 { margin: 0 0 16px; font-size: 28px; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .project-card { background: #fff; border: 1px solid #c9d1d9; border-radius: 10px; padding: 20px; }
+    .project-card h3 { margin: 0 0 8px; font-size: 20px; }
+    .project-card p { margin: 0 0 16px; color: #52606d; }
+    .project-button, .whatsapp {
+      display: inline-block; background: #1f3fd1; color: #fff; text-decoration: none;
+      font-weight: 600; padding: 10px 18px; border-radius: 6px;
+    }
+    .project-button:hover, .whatsapp:hover { background: #172fa0; }
+    ul { padding-left: 20px; margin: 0; }
+    li { margin-bottom: 6px; }
+    footer { padding: 24px 0 40px; color: #52606d; font-size: 14px; }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>My Web Design Portfolio</h1>
-  <p>Simple and professional websites for local businesses.</p>
-</header>
-
-<main>
-  <section>
-    <h2>About Me</h2>
-    <p>I create simple, mobile-friendly websites for local businesses. My goal is to help businesses grow and make it easier for customers to contact them.</p>
-
-    <h2>My Projects</h2>
-
-    <div class="project-card">
-      <h3>Jerry Motor Repair Company</h3>
-      <p>A business website designed to help customers learn about the company and contact them through WhatsApp.</p>
-      <a class="project-button" href="https://gradsongrandpaaboh-dot.github.io/Jerry-Motor-Repair-/" target="_blank">View Website</a>
+  <header>
+    <div class="wrap">
+      <h1>Kappa two</h1>
+      <p>Simple and professional websites for local businesses.</p>
     </div>
+  </header>
 
-    <div class="project-card">
-      <h3>Glass Cutting Business – Demo Website</h3>
-      <p>A demo website designed for a local glass-cutting business.</p>
-      <a class="project-button" href="https://codepen.io/editor/Kapale/pen/01a03f15-b435-7d17-a88d-ac3ef44500b5" target="_blank">View Demo</a>
-    </div>
+  <main>
+    <section>
+      <div class="wrap">
+        <h2>About Me</h2>
+        <p>I create simple, mobile-friendly websites for local businesses. My goal is to help businesses grow and make it easier for customers to contact them.</p>
+      </div>
+    </section>
 
-    <div class="project-card">
-      <h3>CDK WOOD WORK</h3>
-      <p>Professional carpentry and custom woodwork.</p>
-      <a class="project-button" href="https://gradsongrandpaaboh-dot.github.io/CDK-WOOD-WORK/" target="_blank">View Website</a>
-    </div>
-  </section>
+    <section>
+      <div class="wrap">
+        <h2>My Projects</h2>
+        <div class="projects">
 
-  <section>
-    <h2>My Services</h2>
-    <ul>
-      <li>Business website design</li>
-      <li>Mobile-friendly website design</li>
-      <li>Contact and WhatsApp sections</li>
-    </ul>
-  </section>
+          <div class="project-card">
+            <h3>Jerry Motor Repair Company</h3>
+            <p>A business website designed to help customers learn about the company and contact them through WhatsApp.</p>
+            <a class="project-button" href="https://gradsongrandpaaboh-dot.github.io/Jerry-Motor-Repair-/" target="_blank" rel="noopener">View Website</a>
+          </div>
 
-  <section>
-    <h2>Contact Me</h2>
-    <p>Interested in a website for your business? Get in touch with me.</p>
-    <a href="https://wa.me/27710549584" target="_blank">WhatsApp Me</a>
-  </section>
-</main>
+          <div class="project-card">
+            <h3>Glass Cutting Business (Demo Website)</h3>
+            <p>A demo website designed for a local glass-cutting business. This project shows how I can create a simple online presence for a small business.</p>
+            <a class="project-button" href="https://codepen.io/Kapale/pen/01a03f15-b435-7d17-a88d-ac3ef44500b5" target="_blank" rel="noopener">View Demo</a>
+          </div>
+
+          <div class="project-card">
+            <h3>CDK Wood Work</h3>
+            <p>Professional carpentry and custom woodwork.</p>
+            <a class="project-button" href="https://gradsongrandpaaboh-dot.github.io/CDK-WOOD-WORK/" target="_blank" rel="noopener">View Website</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>My Services</h2>
+        <ul>
+          <li>Business website design</li>
+          <li>Mobile-friendly website design</li>
+          <li>Contact and WhatsApp sections</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Contact Me</h2>
+        <p>Interested in a website for your business? Get in touch with me.</p>
+        <a class="whatsapp" href="https://wa.me/27710549584" target="_blank" rel="noopener">WhatsApp Me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Kappa two &middot; Web design &middot; 2026</div>
+  </footer>
 
 </body>
 </html>
