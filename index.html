@@ -109,5 +109,18 @@
     <div class="wrap">Kappa two &middot; Web design &middot; 2026</div>
   </footer>
 
+  <script>
+    // Count taps on WhatsApp links in Google Analytics
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest && e.target.closest('a[href*="wa.me"]');
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'whatsapp_click', {
+        link_text: (link.textContent || '').trim(),
+        page_path: location.pathname,
+        transport_type: 'beacon'
+      });
+    });
+  </script>
+
 </body>
 </html>
